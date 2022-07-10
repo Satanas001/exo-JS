@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto ;
+    padding: 0 15px ;
+    
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.container > div {
+    padding:15px;
+}
+
+label {
+    margin-right:25px;
+}

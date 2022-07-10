@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <style>
+        .invalid-feedback {
+            display: block;
+        }
+
+        .required::after {
+            content: '*' ;
+            color:red ;
+            padding-left: 6px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 offset-lg-4">
+
+                <form name="registration" method="post" novalidate>
+
+                    <div class="form-group">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" class="form-control" name="firstname" id="firstname" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="lastname">NOM</label>
+                        <input type="text" class="form-control" name="lastname" id="lastname" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="plain_password">Mot de passe</label>
+                        <input type="password" class="form-control" name="plain_password" id="plain_password" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="confirm_password">Confirmation du mot de passe</label>
+                        <input type="password" class="form-control" name="confirm_password" id="confirm_password">
+                    </div>
+    
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Inscription</button>
+                    </div>
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+</html>
